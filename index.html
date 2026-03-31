@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Rated Painters in Dublin | Painters Dublin</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Optimized Shared Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { blue: '#2563eb', dark: '#0f172a', green: '#16a34a', light: '#f8fafc' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white selection:bg-brand-blue selection:text-white pb-16 md:pb-0">
+
+    <!-- Top Navigation -->
+    <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-brand-blue rounded flex items-center justify-center text-white font-bold text-xl">P</div>
+                    <span class="font-bold text-xl text-brand-dark tracking-tight">Painters<span class="text-brand-blue">Dublin</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#quote-section" class="text-slate-600 hover:text-brand-blue font-medium transition">Services</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-brand-blue font-medium transition">Pricing</a>
+                    <a href="#reviews" class="text-slate-600 hover:text-brand-blue font-medium transition">Reviews</a>
+                    <a href="tel:012345678" class="flex items-center gap-2 bg-brand-green hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold transition shadow-md">
+                        <i data-lucide="phone" class="w-4 h-4"></i> 01 234 5678
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-slate-50 to-white pt-16 pb-20 lg:pt-24 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-600 font-semibold text-sm mb-6 border border-amber-200">
+                        <div class="flex text-amber-400">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <span>4.9/5 Average Rating</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-tight mb-6">
+                        Top-Rated Painters in Dublin — <span class="text-brand-blue">Quotes in 24 Hours</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Transform your home with premium paints and meticulous prep work. Fully insured and trusted by Dublin homeowners for over 10 years.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="tel:012345678" class="flex items-center justify-center gap-2 bg-brand-green hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg">
+                            <i data-lucide="phone-call" class="w-5 h-5"></i> Call 01 234 5678
+                        </a>
+                        <a href="#quote-section" class="flex items-center justify-center gap-2 bg-brand-dark hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg">
+                            Get Free Online Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="relative lg:ml-auto w-full max-w-lg aspect-video bg-slate-200 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Painters working" class="absolute inset-0 w-full h-full object-cover opacity-90">
+                    <div class="absolute inset-0 bg-brand-dark/20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplified Pricing -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-brand-dark mb-4">Transparent Pricing</h2>
+            <p class="text-slate-500 mb-12">No hidden extras. Estimates include all prep work and materials.</p>
+            <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-brand-dark text-white">
+                            <th class="py-5 px-6">Project Area</th>
+                            <th class="py-5 px-6">Timeline</th>
+                            <th class="py-5 px-6">Estimated Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="py-5 px-6 font-bold">Standard Bedroom</td>
+                            <td class="py-5 px-6 text-brand-blue">1 - 2 Days</td>
+                            <td class="py-5 px-6 font-bold text-brand-green">€350 - €450</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 font-bold">Living Room</td>
+                            <td class="py-5 px-6 text-brand-blue">2 - 3 Days</td>
+                            <td class="py-5 px-6 font-bold text-brand-green">€450 - €600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Step Form -->
+    <section id="quote-section" class="py-24 bg-brand-dark relative">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-2">Get Your Quote in 60 Seconds</h2>
+            <div class="bg-white rounded-3xl p-8 shadow-2xl text-left mt-8">
+                <div class="w-full bg-slate-100 rounded-full h-2 mb-8">
+                    <div id="form-progress" class="bg-brand-blue h-2 rounded-full transition-all duration-300 w-1/4"></div>
+                </div>
+                <form onsubmit="event.preventDefault(); nextStep(4);">
+                    <div id="step-1" class="step-content active">
+                        <h3 class="text-xl font-bold mb-6">What do you need painted?</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button type="button" onclick="selectOption('type', 'Interior'); nextStep(2);" class="p-6 border-2 border-slate-200 rounded-xl hover:border-brand-blue transition">Interior</button>
+                            <button type="button" onclick="selectOption('type', 'Exterior'); nextStep(2);" class="p-6 border-2 border-slate-200 rounded-xl hover:border-brand-blue transition">Exterior</button>
+                        </div>
+                    </div>
+                    <div id="step-2" class="step-content">
+                        <h3 class="text-xl font-bold mb-6">Brief Details</h3>
+                        <input type="text" placeholder="Approx number of rooms" class="w-full border p-4 rounded-xl mb-4">
+                        <button type="button" onclick="nextStep(3)" class="w-full bg-brand-blue text-white p-4 rounded-xl font-bold">Next</button>
+                    </div>
+                    <div id="step-3" class="step-content">
+                        <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+                        <input type="email" placeholder="Email Address" class="w-full border p-4 rounded-xl mb-4" required>
+                        <button type="submit" class="w-full bg-brand-green text-white p-4 rounded-xl font-bold">Get Quote</button>
+                    </div>
+                    <div id="step-4" class="step-content text-center py-8">
+                        <i data-lucide="check-circle" class="w-16 h-16 text-brand-green mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
+                        <p>We'll be in touch within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center">
+        &copy; 2026 Painters Dublin. All Rights Reserved.
+    </footer>
+
+    <!-- Optimized Shared Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
