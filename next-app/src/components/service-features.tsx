@@ -28,13 +28,13 @@ export function ServiceFeatures({ features }: { features: Feature[] }) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-full lg:w-1/2 relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-slate-100 dark:ring-slate-800"
+                className="w-full lg:w-1/2 relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-slate-100 dark:ring-slate-800 group"
               >
                 <Image
                   src={feature.image}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover absolute inset-0 hover:scale-105 transition-transform duration-700"
+                  className="object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700"
                   alt={feature.title}
                 />
               </motion.div>

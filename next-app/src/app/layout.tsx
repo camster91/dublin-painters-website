@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Phone } from "lucide-react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -68,7 +69,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} font-sans min-h-full flex flex-col antialiased bg-brand-light dark:bg-[#0f172a] selection:bg-brand-blue selection:text-white`}>
+      <body className={`${inter.variable} font-sans min-h-full flex flex-col antialiased bg-brand-light dark:bg-[#0f172a] selection:bg-brand-blue selection:text-white pb-20 md:pb-0`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -76,6 +77,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          
+          {/* Mobile Sticky Call Now Button */}
+          <div className="md:hidden fixed bottom-0 left-0 w-full p-4 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.15)]">
+            <a href="tel:012345678" className="flex items-center justify-center gap-2 w-full bg-brand-green hover:bg-green-700 text-white p-4 rounded-xl font-bold text-lg transition shadow-lg">
+              <Phone className="w-5 h-5" />
+              Call Now for a Quote
+            </a>
+          </div>
         </ThemeProvider>
       </body>
     </html>
